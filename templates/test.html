@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} Test {% endblock %}
+
+{% block body %}
+
+<h1>开始测试!</h1>
+<p>如果想要尽可能反映你真实的词汇量水平</p>
+<p>请不要猜测答案</p>
+<p>对于不认识的单词直接选“不认识”</p>
+<form action="#" method="post">
+    <div class="header">
+        <h2>{{word}}:</h2>
+    </div>
+    <div class="cards">   
+        <input type="radio" id="answerChoice0" name="answer" value=0 />
+        <label for="answerChoice0">{{meaning[0]}}</label><br>
+    
+        <input type="radio" id="answerChoice1" name="answer" value=1 />
+        <label for="answerChoice1">{{meaning[1]}}</label><br>
+        
+        <input type="radio" id="answerChoice2" name="answer" value=2 />
+        <label for="answerChoice2">{{meaning[2]}}</label><br>
+        
+        <input type="radio" id="answerChoice3" name="answer" value=3 />
+        <label for="answerChoice3">{{meaning[3]}}</label><br>
+    
+        <input type="radio" id="answerChoice4" name="answer" value=4 />
+        <label for="answerChoice4">{{meaning[4]}}</label><br>
+        
+        <input type="radio" id="answerChoice5" name="answer" value=5 />
+        <label for="answerChoice5">{{meaning[5]}}</label><br>
+
+        <input type="radio" id="answerChoice6" name="answer" value=6 checked/>
+        <label for="answerChoice6">不认识</label><br>
+
+        <button class="btn btn-lg btn-outline-primary" type="submit">提交</button>
+    </div>   
+    
+</form>
+
+{% endblock %}   

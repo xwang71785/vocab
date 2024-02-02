@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Result {% endblock %}
+
+{% block body %} 
+<h1>{{student}}已经完成{{number}}题，测试结果</h1>
+
+<p>标准答案是：{{i}}</p>
+<p>你的答案是：{{answer}}</p>
+<p>你的得分是：{{score}}</p>
+<p>衡量英语高频5000词汇, 您的实际词汇量可能远超测试结果.</p>
+<form method="get" action="/test">
+    <button type="submit">下一题</button>
+</form>
+{% endblock %}             

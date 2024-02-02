@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Final {% endblock %}
+
+        
+{% block body %}
+
+<h1>{{student}}</h1>
+<p>你的最终得分是：{{score}}</p>
+<p>英语高频5000词汇的掌握程度,{{score * 2}}% .</p>
+<form method="get" action="/logout">
+    <button type="submit">退出</button>
+</form>
+
+{% endblock %}      
