@@ -3,25 +3,41 @@ body{
     background-image: url("back.png");
 }
 .container{
+    padding: 1rem;
     position: absolute;
     top: 10%;
     left: 5%;
     display: inline-block;
-    color: whitesmoke;
+    color: #008C8C;
+    width: 550px;
+    height: 65vh;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
 .header{
-    padding: 1rem 0;
-    
-    margin: 0 auto;
+    width: 50%;
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 550;
-    color: #000;
+    color: #003153;
+    background-image:linear-gradient(135deg, #008C8C, #81D8D0);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
+.cards{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #E85827;
+}
+
+button{
+    font-size: 1.5rem;
+    color: gray;
+    background-color: #205b59;
+}
 
 input[type=text], select {
     width: 50%;
