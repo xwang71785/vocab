@@ -37,7 +37,9 @@ def login():
     if request.method == "POST":
         session.permanent = True
         user = request.form["name"]
+        volume = request.form["volume"]
         session["user"] = user
+        session["volume"] = int(volume)
         session["number"] = 0
         session["score"] = 0
         return redirect(url_for("test"))
@@ -81,6 +83,7 @@ def test():
 @app.route("/logout", methods=["POST", "GET"])
 def logout():
     session.pop("user", None)
+    session.pop("volume", None)
     session.pop("number", None)
     session.pop("score", None)
     session.pop("wlist", None)
